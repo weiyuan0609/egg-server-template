@@ -1,0 +1,370 @@
+[
+  {
+    "type": "get",
+    "url": "/",
+    "title": "egg接口名称",
+    "description": "<p>egg接口描述</p>",
+    "version": "0.0.1",
+    "name": "GetName",
+    "group": "HOME",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>用户名</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>消息体，请求失败消息体是null</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>用户姓名</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>请求状态 200 请求成功</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>错误消息</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "出参示例:",
+          "content": "{\n        \"code\": 200,\n        \"msg\": \"\",\n        \"data\": {\n          \"name\": \"张三\"\n        }\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "fields": {
+        "Error 4xx": [
+          {
+            "group": "Error 4xx",
+            "optional": false,
+            "field": "UserNotFound",
+            "description": "<p>The <code>id</code> of the User was not found.</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "Error-Response:",
+          "content": "HTTP/1.1 404 Not Found\n{\n   \"error\": \"UserNotFound\"\n}",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/controller/home.ts",
+    "groupTitle": "HOME"
+  },
+  {
+    "type": "get",
+    "url": "/juejin/v1/info",
+    "title": "获取基本信息",
+    "description": "<p>获取掘金用户基本信息</p>",
+    "version": "0.0.1",
+    "name": "GetInfo",
+    "group": "掘金",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>消息体，请求失败消息体是null</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Boolean",
+            "optional": false,
+            "field": "data.isNewUser",
+            "description": "<p>是否新用户</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.serverTimeAt",
+            "description": "<p>时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>请求状态 200 请求成功</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>错误消息</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "出参示例:",
+          "content": "{\n        \"code\": 200,\n        \"msg\": \"\",\n        \"data\": {\n          \"isNewUser\": \"false\",\n          \"serverTimeAt\": \"2020-05-15T15:15:58.000Z\",\n        }\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/controller/juejin.ts",
+    "groupTitle": "掘金"
+  },
+  {
+    "type": "post",
+    "url": "/juejin/v1/pages",
+    "title": "获取文章列表",
+    "description": "<p>获取文章列表信息</p>",
+    "version": "0.0.1",
+    "name": "GetPage",
+    "group": "掘金",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>消息体，请求失败消息体是null</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.id",
+            "description": "<p>id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.content",
+            "description": "<p>内容</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.title",
+            "description": "<p>标题</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.createdAt",
+            "description": "<p>时间</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>请求状态 200 请求成功</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>错误消息</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "出参示例:",
+          "content": "{\n        \"code\": 200,\n        \"msg\": \"\",\n        \"data\": {\n          \"id\": \"5ebd3b855188256d997cd3c1\",\n          \"content\": \"在每个项目的\",\n          \"title\": \"重新认识  package.json\",\n          \"name\": \"前端小黑\",\n          \"createdAt\": \"2020-05-15T03:18:32.066Z\"\n        }\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/controller/juejin.ts",
+    "groupTitle": "掘金"
+  },
+  {
+    "type": "delete",
+    "url": "/juejin/v1/page/:id",
+    "title": "删除文章信息",
+    "description": "<p>根据id删除文章信息</p>",
+    "version": "0.0.1",
+    "name": "delPage",
+    "group": "掘金",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>消息体，请求失败消息体是null</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.pageId",
+            "description": "<p>page id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>请求状态 200 请求成功</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>错误消息</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "出参示例:",
+          "content": "{\n        \"code\": 200,\n        \"msg\": \"\",\n        \"data\": {\n          \"pageId\": '123',\n        }\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/controller/juejin.ts",
+    "groupTitle": "掘金"
+  },
+  {
+    "type": "put",
+    "url": "/juejin/v1/page/:id",
+    "title": "修改文章信息",
+    "description": "<p>根据id修改文章信息</p>",
+    "version": "0.0.1",
+    "name": "putPaGe",
+    "group": "掘金",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "name",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "id",
+            "description": "<p>用户ID</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "入参示例:",
+          "content": "{\n        \"name\": \"法外狂徒张三\",\n        \"id\": 0910923212\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": "<p>消息体，请求失败消息体是null</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.pageId",
+            "description": "<p>page id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>用户名</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.id",
+            "description": "<p>用户id</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>请求状态 200 请求成功</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>错误消息</p>"
+          }
+        ]
+      },
+      "examples": [
+        {
+          "title": "出参示例:",
+          "content": "{\n        \"code\": 200,\n        \"msg\": \"\",\n        \"data\": {\n          \"pageId\": '123',\n          \"name\": \"张三\",\n          \"id\": 213\n        }\n      }",
+          "type": "json"
+        }
+      ]
+    },
+    "filename": "app/controller/juejin.ts",
+    "groupTitle": "掘金"
+  }
+]

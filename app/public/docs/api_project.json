@@ -1,0 +1,19 @@
+{
+  "name": "egg 接口文档",
+  "version": "0.0.1",
+  "description": "apiDoc 接口文档描述",
+  "title": "egg 接口文档",
+  "url": "https://localhost:7001",
+  "template": {
+    "forceLanguage": "zh_cn"
+  },
+  "sampleUrl": false,
+  "defaultVersion": "0.0.0",
+  "apidoc": "0.3.0",
+  "generator": {
+    "name": "apidoc",
+    "time": "2020-05-19T02:57:09.084Z",
+    "url": "http://apidocjs.com",
+    "version": "0.22.1"
+  }
+}

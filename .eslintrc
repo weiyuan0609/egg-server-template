@@ -1,0 +1,9 @@
+{
+  "extends": "eslint-config-egg/typescript",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "jsdoc/check-tag-names": "off" //强制使用有效的 JSDoc 注释
+  }
+}
