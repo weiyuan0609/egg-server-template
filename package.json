@@ -25,6 +25,7 @@
   "dependencies": {
     "apidoc": "^0.22.1",
     "egg": "^2.6.1",
+    "egg-alinode": "^2.0.1",
     "egg-scripts": "^2.6.0",
     "egg-validate": "^2.0.2",
     "egg-view-nunjucks": "^2.2.0"

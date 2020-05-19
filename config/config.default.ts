@@ -49,5 +49,10 @@ export default (appInfo: EggAppInfo) => {
         '.tpl': 'nunjucks',
       },
     },
+    alinode: {
+      // 从 `Node.js 性能平台` 获取对应的接入参数
+      appid: '84910',
+      secret: '7ee8119280aa3bc13cbb8180f265d982296bdc1a',
+    },
   };
 };
