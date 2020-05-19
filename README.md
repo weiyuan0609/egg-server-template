@@ -49,8 +49,8 @@ https://apidocjs.com/#param-api-error
 - [x] 安全
 - [x] 模板渲染
 - [x] 定时任务
-- [] 部署
-- [] socketio
+- [ ] 部署
+- [ ] socketio
 - [ ] 性能监控
 - [ ] 支持鉴权，认证（待更新）
 - [ ] 连接, 操作数据库（待更新）
