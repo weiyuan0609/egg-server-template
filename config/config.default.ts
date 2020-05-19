@@ -50,9 +50,17 @@ export default (appInfo: EggAppInfo) => {
       },
     },
     alinode: {
+      enable: true,
       // 从 `Node.js 性能平台` 获取对应的接入参数
-      appid: '84910',
-      secret: '7ee8119280aa3bc13cbb8180f265d982296bdc1a',
+      appid: '84914',
+      secret: 'b8f43016dc2df95451a2f13bb4fe2145cccadeb4',
+      logdir: '/tmp',
+      error_log: [
+        `${appInfo.baseDir}/logs/egg-test/egg-web.log`,
+        `${appInfo.baseDir}/logs/egg-test/common-error.log`,
+        `${appInfo.baseDir}/logs/egg-test/egg-agent.log`,
+      ],
+      packages: [ `${appInfo.baseDir}/package.json` ],
     },
   };
 };

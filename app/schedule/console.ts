@@ -24,7 +24,7 @@ class LoggerNumber extends Subscription {
   public static get schedule() {
     return {
       // cron: '0 0 */3 * * *', // 每三小时准点执行一次
-      interval: '3s', // 3 秒间隔   eg: 1m 1分钟
+      interval: '1m', // 3s 3 秒间隔   eg: 1m 1分钟
       type: 'all', // 指定所有的 worker 都需要执行
     };
   }
