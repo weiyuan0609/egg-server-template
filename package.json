@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-test",
-    "stop": "egg-scripts stop --title=egg-server-koa-test",
+    "stop": "egg-scripts stop --title=egg-server-test",
     "dev": "egg-bin dev",
     "debug": "egg-bin debug",
     "test-local": "egg-bin test",
