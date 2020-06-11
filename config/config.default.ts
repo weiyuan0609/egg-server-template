@@ -5,7 +5,7 @@ export default (appInfo: EggAppInfo) => {
 
   // override config from framework / plugin
   // use for cookie sign key, should change to your own and keep security
-  config.keys = 'eyJ0b2tlbiI6ImV5SmhZMk5sYzNOZmRHOXJaVzRpT2lKcFkzcHFlRmszUTBsd2NuSk5ja3BDSWl3aWNtVm1jbVZ6YUY5MGIydGxiaUk2SW5sRWFGcGlNVE5qZFV4ck4xUXlOVkVpTENKMGIydGxibDkwZVhCbElqb2liV0ZqSWl3aVpYaHdhWEpsWDJsdUlqb3lOVGt5TURBd2ZRPT0iLCJjbGllbnRJZCI6MTU4NzM0NzUzMjUzNCwidXNlcklkIjoiNThmMWFlZDA1YzQ5N2QwMDZjODQwMjJhIn0';
+  config.keys = 'eyJ0b2tlbiI6ImV5SmhZMk5sYzNOZmRHOXJaVzRpT2lKcFkzcHFlRmszUTBsd2NuSk5ja3BDSWl3aWNtVm1jbVZ6YUY5MGIydGxiaUk2SW5sRWFGcGlNVE5qZFV4ck4xUXlOVkVpTENKMGIydGxibDkwZVhCbElqb2liV0ZqSWl3aVpYaHdhWEpsWDJsdUlqb3lOVGt5TURBd2ZRPT0iLCJjbGllbnRJZCI6MTU4NzM0NzUzMjUzNCwidXNlcklkIjoiNThmMWFlZDA1YzQ5N2QwMDZjODQwMjJh567';
 
   // config.proxy = true;
 
